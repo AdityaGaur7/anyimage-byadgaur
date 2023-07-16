@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ font-family: math;
+}
+body{
+    background: rgb(171, 176, 176);
+}
+.txt{
+    width: 100%;
+    height: 10vh;
+    text-transform: uppercase;
+    font-family: math;
+    color: rgb(81, 90, 90);
+    text-shadow: 2px 3px 7px rgb(23, 12, 12);
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+.txt h2{
+    animation: text 2s infinite 0s linear ;
+
+}
+@keyframes text {
+    0%{
+        color: rgb(3, 243, 243);
+
+        text-shadow: 2px 3px 7px rgb(211, 61, 61);
+
+    }
+    50%{
+        color: rgb(241, 67, 3);
+
+        text-shadow: 2px 3px 7px rgb(8, 235, 231);
+
+    }
+    100%{
+        color: rgb(213, 240, 6);
+        text-shadow: 2px 3px 7px rgb(33, 10, 237);
+    }
+   
+    
+}
+.box{
+    width: 100%;
+    height: 100vh;
+
+}
+.g{
+    display: grid;
+}
+.f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    /* background:rgb(233, 98, 98); */
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    height: 30vh;
+}
+input{
+    padding: 1rem;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 0;
+    background: rgb(211, 203, 203);
+    color: rgb(5, 39, 151) ;
+    font-family: cursive;
+    outline: 0;
+}
+button{
+    padding: 1rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 0;
+}
+button:hover,input:hover{
+    
+    transform: translateY(-3px);
+    box-shadow: 2px 3px 2px rgb(64, 62, 62);
+
+}
+img{
+    width:auto ;
+    background-position: center;
+    height: 50vh;
+    margin: 2rem;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    
+}
+#photo{
+    width: auto;
+    margin: 2rem;
+    height: 40vh;
+    background: url('http://source.unsplash.com/1980x1080/?mouse');
+    background-position: center;
+    background-size: cover;
+
+}
+
+@media (max-width: 690px) {
+    img{
+        height: 10rem;
+        transform: translateY(-13rem);
+    }
+    input{
+        width: 8rem;
+    }
+    .form{
+        width: 100vw;
+    }
+}
